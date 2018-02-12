@@ -32,7 +32,7 @@ or you can view it directly from here with the help of github pages:
 * Minified index.html  
 Page speed Score:  
 ![Mobile](/Users/Mousa/Desktop/mobile.png "Title")
-Desktop:  
+![Desktop](https://ibb.co/hCs0wS "Title") 
 img  
 ### Sources and tools used: 
 * [Pagespeed](https://developers.google.com/speed/pagespeed/insights/)
