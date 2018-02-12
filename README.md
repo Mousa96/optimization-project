@@ -17,10 +17,10 @@ Basically they're are only different in two files index.html and js/perfmatters.
 # Set up 
 To run the website you have two options:
 Either to run it locally and that's by cloning the repo and then hosting it locally with the help of python and ngrok.
-Helpful guide can be found here
-[Link](https://github.com/udacity/frontend-nanodegree-mobile-portfolio)
+Helpful guide can be found
+[here](https://github.com/udacity/frontend-nanodegree-mobile-portfolio)
 or you can run view it directly from here with the help of github pages:
-[Link](https://mousa96.github.io/optimization-project/dist/)
+[optimization-project](https://mousa96.github.io/optimization-project/dist/)
 # Approach
 1. Achieving 90 or more score on index.html
 * Made the google analytics script async
