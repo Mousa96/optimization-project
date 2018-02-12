@@ -31,9 +31,8 @@ or you can view it directly from here with the help of github pages:
 * Minified perfmatters.js 
 * Minified index.html  
 Page speed Score:  
-![Mobile](/Users/Mousa/Desktop/mobile.png "Title")
-![Desktop](https://ibb.co/hCs0wS "Title") 
-img  
+* Mobile: 99
+* Desktop: 96
 ### Sources and tools used: 
 * [Pagespeed](https://developers.google.com/speed/pagespeed/insights/)
 * [Web Font Loader](https://github.com/typekit/webfontloader)
