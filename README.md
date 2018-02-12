@@ -29,12 +29,12 @@ or you can run view it directly from here with the help of github pages:
 * Optimized and compressed images (profilepic and pizzeria) with the help of pagespeed suggestions
 * Inlined style.css
 * Minified perfmatters.js 
-* Minified index.html
-Page speed Score:
-Mobile:
-Desktop: 
-img
-**Sources and tools used: **
+* Minified index.html  
+Page speed Score:  
+Mobile:  
+Desktop:  
+img  
+### Sources and tools used: 
 * [Pagespeed] (https://developers.google.com/speed/pagespeed/insights/)
 * [Web Font Loader] (https://github.com/typekit/webfontloader)
 
