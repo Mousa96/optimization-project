@@ -530,6 +530,7 @@ function updatePositions() {
       var phase = Math.sin((tmp) + (i % 5));
      window.items[i].style.transform = 'translateX(' + ( 100 * phase ) + 'px)'; // removed the below implementaion and replaced it with style.transform to allow for smoother animation
   // ref: https://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/
+	    // ref: https://www.youtube.com/watch?v=OxIR9CDefOI
      //items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
