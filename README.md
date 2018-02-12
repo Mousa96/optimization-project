@@ -19,7 +19,7 @@ To run the website you have two options:
 Either to run it locally and that's by cloning the repo and then hosting it locally with the help of python and ngrok.
 Helpful guide can be found
 [here](https://github.com/udacity/frontend-nanodegree-mobile-portfolio)
-or you can run view it directly from here with the help of github pages:
+or you can view it directly from here with the help of github pages:
 [optimization-project](https://mousa96.github.io/optimization-project/dist/)
 # Approach
 1. Achieving 90 or more score on index.html
@@ -31,12 +31,13 @@ or you can run view it directly from here with the help of github pages:
 * Minified perfmatters.js 
 * Minified index.html  
 Page speed Score:  
-Mobile:  
+![Mobile](/Users/Mousa/Desktop/mobile.png "Title")
 Desktop:  
 img  
 ### Sources and tools used: 
 * [Pagespeed](https://developers.google.com/speed/pagespeed/insights/)
 * [Web Font Loader](https://github.com/typekit/webfontloader)
+* [HTML minifier](https://www.willpeavy.com/minifier/)
 
 
 2. Pizzeria slider optimization and consistent 60 fps animations
