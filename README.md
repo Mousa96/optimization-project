@@ -1,7 +1,7 @@
 # optimization-project
 Udacity FEND Opt. Project
 # Project Explanation 
-We've been provided with a website that contains a lot of performance issue and the goal is to:
+We've been provided with a website that contains a lot of performance issues and the goal is to:
 1. index.html achieves a PageSpeed score of at least 90 for Mobile and Desktop.
 1. Optimizations made to views/js/main.js make views/pizza.html render with a consistent frame-rate at 60fps when scrolling.
 1. Time to resize pizzas is less than 5 ms using the pizza size slider on the views/pizza.html page. Resize time is shown in the browser developer tools.
