@@ -35,6 +35,6 @@ Mobile:
 Desktop:  
 img  
 ### Sources and tools used: 
-* [Pagespeed] (https://developers.google.com/speed/pagespeed/insights/)
-* [Web Font Loader] (https://github.com/typekit/webfontloader)
+* [Pagespeed](https://developers.google.com/speed/pagespeed/insights/)
+* [Web Font Loader](https://github.com/typekit/webfontloader)
 
