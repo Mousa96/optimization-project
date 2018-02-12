@@ -41,5 +41,5 @@ img
 
 2. Pizzeria slider optimization and consistent 60 fps animations
 * There is comments throughout the main.js explaining each changes.
-### source and tools used:
+### Source and tools used:
 * mentioned in the comments
