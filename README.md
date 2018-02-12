@@ -38,3 +38,8 @@ img
 * [Pagespeed](https://developers.google.com/speed/pagespeed/insights/)
 * [Web Font Loader](https://github.com/typekit/webfontloader)
 
+
+1. Pizzeria slider optimization and consistent 60 fps animations
+* There is comments throughout the main.js explaining each changes.
+### source and tools used:
+* mentioned in the comments
