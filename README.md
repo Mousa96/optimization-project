@@ -12,7 +12,7 @@ which contains the source code with comments and clear indentations. (readable)
 * dist
 which contains the production code and minified versions of html/css/js files.
 
-Basically they're are only different in two files index.html and js/perfmatters.js where minifying has been done. The rest are the same.
+Basically they're only different in two files index.html and js/perfmatters.js where minifying has been done. The rest are the same.
 
 # Set up 
 To run the website you have two options:
