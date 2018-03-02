@@ -1,16 +1,12 @@
 /*
 Welcome to the 60fps project! Your goal is to make Cam's Pizzeria website run
 jank-free at 60 frames per second.
-
 There are two major issues in this code that lead to sub-60fps performance. Can
 you spot and fix both?
-
-
 Built into the code, you'll find a few instances of the User Timing API
 (window.performance), which will be console.log()ing frame rate data into the
 browser console. To learn more about User Timing API, check out:
 http://www.html5rocks.com/en/tutorials/webperformance/usertiming/
-
 Creator:
 Cameron Pittman, Udacity Course Developer
 cameron *at* udacity *dot* com
@@ -18,6 +14,7 @@ cameron *at* udacity *dot* com
 
 // As you may have realized, this website randomly generates pizzas.
 // Here are arrays of all possible pizza ingredients.
+
 var pizzaIngredients = {};
 pizzaIngredients.meats = [
   "Pepperoni",
@@ -441,7 +438,7 @@ var resizePizzas = function(size) {
 
     }
     //stored document.querySelectorAll(".randomPizzaContainer") in a veriable to read it once
-    var randomPizzas = document.querySelectorAll(".randomPizzaContainer");
+    var randomPizzas = document.getElementsByClassName(".randomPizzaContainer");
     for (var i = 0; i < randomPizzas.length; i++) {
       //Set the width for each element depending on it percentage
       randomPizzas[i].style.width = newWidth + "%";
@@ -460,8 +457,10 @@ var resizePizzas = function(size) {
 window.performance.mark("mark_start_generating"); // collect timing data
 
 // This for-loop actually creates and appends all of the pizzas when the page loads
+
+  var pizzasDiv = document.getElementById("randomPizzas"); //Moved it outside of the for-loop for efficiency
 for (var i = 2; i < 100; i++) {
-  var pizzasDiv = document.getElementById("randomPizzas");
+
   pizzasDiv.appendChild(pizzaElementGenerator(i));
 }
 
@@ -486,8 +485,7 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 }
 
 
-// Beginning of the implementaion with requestAnimationFrame as explained here
-// ref: https://www.html5rocks.com/en/tutorials/speed/animations/
+
 
 
 var latestKnownY=0;
@@ -524,8 +522,9 @@ function updatePositions() {
     //stored the "scrollTop / 1250" (Old) or the "latestKnownY / 1250" (New) in a
     // variable outside the for loop to avoid computing it each time and improve performance
     var tmp = latestKnownY / 1250;
-    window.items = document.querySelectorAll('.mover');
-    for (var i = 0; i < items.length; i++) {
+    window.items = document.getElementsByClassName('.mover');
+    var length = items.length;
+    for (var i = 0; i < length; i++) {
 
       var phase = Math.sin((tmp) + (i % 5));
      window.items[i].style.transform = 'translateX(' + ( 100 * phase ) + 'px)'; // removed the below implementaion and replaced it with style.transform to allow for smoother animation
@@ -555,22 +554,27 @@ document.addEventListener("DOMContentLoaded", function() {
   var cols = 8;
   var s = 256;
 
-
   //stored document.querySelector("#movingPizzas1") in a variable and
   // moved it outside of the loop to read it once
   movingPizzas = document.querySelector("#movingPizzas1");
 
-  for (var i = 0; i < 100; i++) {
-    var elem = document.createElement('img');
+  var elem; //moved the declaration outside the loop
+
+  var myPizzasSize = Math.round(screen.height / s) * cols; //Dynamically calculating the number of pizzas to be rendered based on the screen size instead of using a static large value
+  for (var i = 0; i < myPizzasSize; i++) {
+     elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
     elem.style.height = "100px";
     elem.style.width = "73.333px";
     //elem.basicLeft = (i % cols) * s;
-    elem.style.left = (i % cols) * s + 'px'; //sets the initial left position 
+    elem.style.left = (i % cols) * s + 'px'; //sets the initial left position
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
     movingPizzas.appendChild(elem);
   }
 
   window.requestAnimationFrame(updatePositions);
 });
+
+// implementaion of requestAnimationFrame was inspired from the source below:
+// ref: https://www.html5rocks.com/en/tutorials/speed/animations/
