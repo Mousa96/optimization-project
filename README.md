@@ -45,5 +45,5 @@ Page speed Score:
 * Moved every forced repeated declartion outside of loops
 * Implemented RequestAnimationFrame to improve animation
 * There is comments throughout the main.js explaining each changes.
-### Source and tools used:
+### Sources and tools used:
 * mentioned in the comments
