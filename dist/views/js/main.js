@@ -438,7 +438,7 @@ var resizePizzas = function(size) {
 
     }
     //stored document.querySelectorAll(".randomPizzaContainer") in a veriable to read it once
-    var randomPizzas = document.getElementsByClassName(".randomPizzaContainer");
+    var randomPizzas = document.getElementsByClassName("randomPizzaContainer");
     for (var i = 0; i < randomPizzas.length; i++) {
       //Set the width for each element depending on it percentage
       randomPizzas[i].style.width = newWidth + "%";
