@@ -522,7 +522,7 @@ function updatePositions() {
     //stored the "scrollTop / 1250" (Old) or the "latestKnownY / 1250" (New) in a
     // variable outside the for loop to avoid computing it each time and improve performance
     var tmp = latestKnownY / 1250;
-    window.items = document.getElementsByClassName('.mover');
+    window.items = document.getElementsByClassName('mover');
     var length = items.length;
     for (var i = 0; i < length; i++) {
 
@@ -556,7 +556,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   //stored document.querySelector("#movingPizzas1") in a variable and
   // moved it outside of the loop to read it once
-  movingPizzas = document.querySelector("#movingPizzas1");
+  movingPizzas = document.getElementById("movingPizzas1");
 
   var elem; //moved the declaration outside the loop
 
